@@ -16,4 +16,7 @@ func main() {
 	})
 
 	r.Run(":8080")
+
+	db, _ := db.Connect()
+	db.AutoMigrate(&models.User{})
 }
