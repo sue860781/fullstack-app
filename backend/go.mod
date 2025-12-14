@@ -1,4 +1,4 @@
-module github.com/shisoponzu/fullstack-portfolio
+module backend
 
 go 1.25.4
 

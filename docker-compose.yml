@@ -11,6 +11,7 @@ services:
     depends_on:
       - db
     environment:
+      - GO111MODULE=on
       - DB_HOST=db
       - DB_USER=postgres
       - DB_PASSWORD=postgres

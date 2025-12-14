@@ -1,5 +1,10 @@
 FROM golang:1.25.4
+
 WORKDIR /app
+
+COPY go.mod go.sum ./
+RUN go mod download
+
 COPY . .
-RUN go mod tidy
+
 CMD ["go", "run", "main.go"]
